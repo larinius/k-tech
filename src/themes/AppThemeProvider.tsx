@@ -1,5 +1,4 @@
 import { ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material/styles';
-import { useAppSelector } from '@/app/store';
 import { PaletteMode } from '@mui/material';
 import * as React from 'react';
 type Props = {
@@ -85,16 +84,16 @@ declare module '@mui/material/Typography' {
   }
 }
 export const AppThemeProvider: React.FC<Props> = ({ children }) => {
-  const mode = useAppSelector((state) => state.user.mode);
+  const mode = "light";
   const theme = responsiveFontSizes(
     createTheme({
       palette: {
         mode: mode as PaletteMode,
         primary: {
-          main: '#1c9c7c',
+          main: '#0880AE',
         },
         secondary: {
-          main: '#9DF3C4',
+          main: '#FFFFFF',
         },
         Ink: {
           Darkest: '#000000',
@@ -160,7 +159,7 @@ export const AppThemeProvider: React.FC<Props> = ({ children }) => {
       },
 
       typography: {
-        fontFamily: 'Dosis, sans-serif',
+        fontFamily: 'Poppins, sans-serif',
 
         h1: {
           fontSize: '26px',

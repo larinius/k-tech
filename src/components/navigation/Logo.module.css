@@ -1,0 +1,10 @@
+.logo {
+  position: relative;
+  width: 140px;
+  height: 56px;
+  margin: 0 auto;
+  background-image: url("/static/icons/logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 999;
+}

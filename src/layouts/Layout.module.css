@@ -1,0 +1,21 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.content.homeContent {
+  padding-left: 0rem;
+  padding-right: 0rem;
+} 
+
+ @media (min-width: 768px) {
+  .content {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
