@@ -1,0 +1,51 @@
+.headerBar {
+  position: relative;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.logoContainer {
+  position: relative;
+  display: flex;
+  flex-grow: 0;
+  align-items: center;
+  width: 150px;
+}
+
+.phone {
+  flex-grow: 1;
+  color: #252525;
+  margin-left: 3rem;
+}
+
+.smallText {
+  color: #727272;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  line-height: 16px !important;
+  letter-spacing: 0px !important;
+  text-align: left;
+}
+
+.number {
+  font-size: 22px !important;
+  font-weight: 400 !important;
+  line-height: 24px !important;
+  letter-spacing: 0px !important;
+  text-align: left;
+}
+
+.burgerIcon {
+  color: white;
+}
+
+button.MuiIconButton-root:focus {
+  outline: none;
+}
+
+@media (min-width: 1200px) {
+  .headerBar {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}

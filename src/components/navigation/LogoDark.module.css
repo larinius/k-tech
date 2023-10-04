@@ -1,0 +1,24 @@
+.logoContainer {
+  width: 100%;
+  max-width: 300px; /* Adjust the maximum width as needed */
+  margin: 0 auto;
+  position: relative;
+}
+
+.logo {
+  width: 100%;
+  padding-bottom: 42.25%; /* This ratio maintains the aspect ratio (88px / 208px) */
+  background-image: url("/static/icons/logo-dark.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+@media (max-width: 640px) {
+  .logoContainer {
+    max-width: 200px; /* Adjust the maximum width for smaller screens */
+  }
+
+  .logo {
+    padding-bottom: 49.5%; /* Adjust the aspect ratio for smaller screens */
+  }
+}
